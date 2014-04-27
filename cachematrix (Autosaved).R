@@ -27,6 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
          setInverse <- function() {im <<- solve(x)}
          # Return the Inverse of X
          getInverse <- function() {im}
+         
          list(set = set,  get = get, 
          	  setInverse = setInverse, 
          	  getInverse = getInverse)
